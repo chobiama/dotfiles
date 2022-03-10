@@ -1,6 +1,11 @@
 set PATH $HOME/.nodebrew/current/bin $PATH
 set XDG_CONFIG_HOME ~/.config $XDG_CONFIG_HOME
 set XDG_CACHE_HOME ~/.cache $XDG_CACHE_HOME
+set ANDROID_HOME $HOME/Library/Android/sdk
+set PATH $ANDROID_HOME/emulator $PATH
+set PATH $ANDROID_HOME/tools $PATH
+set PATH $ANDROID_HOME/tools/bin $PATH
+set PATH $ANDROID_HOME/platform-tools $PATH
 
 # theme
 set -g theme_color_scheme terminal-dark
@@ -15,6 +20,7 @@ alias ls "ls -p -G"
 alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
+alias g git
 
 ## peco
 set fish_plugins theme peco
