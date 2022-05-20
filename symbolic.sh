@@ -1,5 +1,6 @@
 ln -sf ~/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/.config/fish/config.fish  ~/.config/fish/config.fish
+ln -sf ~/dotfiles/.config/fish/config-osx.fish  ~/.config/fish/config-osx.fish
 ln -sf ~/dotfiles/.vim/rc/dein.toml  ~/.cache/dein/dein.toml
 ln -sf ~/dotfiles/.vim/rc/dein_lazy.toml  ~/.cache/dein/dein_lazy.toml
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
