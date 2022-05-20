@@ -2,7 +2,6 @@ set fish_greeting ""
 
 set -gx TERM xterm-256color
 
-set PATH $HOME/.nodebrew/current/bin $PATH
 set XDG_CONFIG_HOME ~/.config $XDG_CONFIG_HOME
 set XDG_CACHE_HOME ~/.cache $XDG_CACHE_HOME
 set ANDROID_HOME $HOME/Library/Android/sdk
@@ -28,12 +27,15 @@ command -qv nvim && alias vim nvim
 
 set -gx EDITOR nvim
 
-## peco
+
+# NodeJS
+set -gx PATH $HOME/.nodebrew/current/bin $PATH
+
+# peco
 set fish_plugins theme peco
 
 function fish_user_key_bindings
   bind \cr peco_select_history # Bind for prco history to Ctrl+r
-  bind \cf peco_change_directory # Bind for peco change directory to Ctrl+F
   bind \c] peco_select_ghq_repository # Bind dor peco ghq history to Ctrl+]
 end
 
