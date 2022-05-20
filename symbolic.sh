@@ -10,3 +10,5 @@ ln -sf ~/ghq/github.com/chobiama/dotfiles/.config/nvim/plugins/coc.rc.vim ~/.con
 ln -sf ~/ghq/github.com/chobiama/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/ghq/github.com/chobiama/dotfiles/.tmux.powerline.conf ~/.tmux.powerline.conf
 ln -sf ~/ghq/github.com/chobiama/dotfiles/.vimrc.lightline ~/.vimrc.lightline
+ln -sf ~/ghq/github.com/chobiama/dotfiles/.config/fish/functions/peco_select_history.fish  ~/.config/fish/functions/peco_select_history.fish
+ln -sf ~/ghq/github.com/chobiama/dotfiles/.config/fish/functions/peco_select_ghq_repository.fish  ~/.config/fish/functions/peco_select_ghq_repository.fish
