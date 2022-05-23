@@ -29,7 +29,7 @@ set -gx EDITOR nvim
 
 
 # NodeJS
-set -gx PATH $HOME/.nodebrew/current/bin $PATH
+set -gx PATH node_modules/.bin $PATH
 
 # peco
 set fish_plugins theme peco
