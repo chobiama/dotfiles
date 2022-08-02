@@ -8,6 +8,7 @@ ln -sf ~/dotfiles/.config/nvim/plugins/defx.rc.vim ~/.config/nvim/plugins/defx.r
 ln -sf ~/dotfiles/.config/nvim/plugins/denite.rc.vim ~/.config/nvim/plugins/denite.rc.vim
 ln -sf ~/dotfiles/.config/nvim/plugins/coc.rc.vim ~/.config/nvim/plugins/coc.rc.vim
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.tmux.conf.osx ~/.tmux.conf.osx
 ln -sf ~/dotfiles/.tmux.powerline.conf ~/.tmux.powerline.conf
 ln -sf ~/dotfiles/.vimrc.lightline ~/.vimrc.lightline
 ln -sf ~/dotfiles/.config/fish/functions/peco_select_history.fish  ~/.config/fish/functions/peco_select_history.fish
