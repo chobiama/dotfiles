@@ -13,3 +13,4 @@ ln -sf ~/dotfiles/.tmux.powerline.conf ~/.tmux.powerline.conf
 ln -sf ~/dotfiles/.vimrc.lightline ~/.vimrc.lightline
 ln -sf ~/dotfiles/.config/fish/functions/peco_select_history.fish  ~/.config/fish/functions/peco_select_history.fish
 ln -sf ~/dotfiles/.config/fish/functions/peco_select_ghq_repository.fish  ~/.config/fish/functions/peco_select_ghq_repository.fish
+ln -sf ~/dotfiles/.config/nvim/colors/NeoSolarized.vim ~/.config/nvim/colors/NeoSolarized.vim

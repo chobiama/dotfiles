@@ -8,7 +8,7 @@ scriptencoding utf-8
 " Color scheme
 "-------------------------------------------------------------------------------
 
-colorscheme solarized
+" colorscheme solarized
 
 
 

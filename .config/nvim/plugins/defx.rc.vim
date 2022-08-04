@@ -1,11 +1,10 @@
-
 " Define mappings
 "cnoreabbrev sf Defx -listed -new
 "      \ -columns=indent:mark:icon:icons:filename:git:size
 "      \ -buffer-name=tab`tabpagenr()`<CR>
 nnoremap <silent>sf :<C-u>Defx -listed -resume
-      \ -split=vertical -vertical_preview
-      \ -columns=indent:mark:icon:icons:filename:git:size
+      \ -split=vertical -winwidth=40 -direction=topleft -vertical_preview
+      \ -columns=indent:git:mark:icon:icons:space:filename:size
       \ -buffer-name=tab`tabpagenr()`
       \ `expand('%:p:h')` -search=`expand('%:p')`<CR>
 nnoremap <silent>fi :<C-u>Defx -new `expand('%:p:h')` -search=`expand('%:p')`<CR>
@@ -30,11 +29,11 @@ autocmd FileType defx call s:defx_my_settings()
     \ defx#do_action('open', 'tabnew')
     nnoremap <silent><buffer><expr> E
     \ defx#do_action('drop', 'vsplit')
-	  nnoremap <silent><buffer><expr> P
-	  \ defx#do_action('drop', 'pedit')
+    nnoremap <silent><buffer><expr> P
+    \ defx#do_action('drop', 'pedit')
 	  nnoremap <silent><buffer><expr> o
     \ defx#is_directory() ?
-    \ defx#do_action('open_or_close_tree') :
+    \ defx#do_action('open') :
 	  \ defx#do_action('drop')
 	  nnoremap <silent><buffer><expr> K
 	  \ defx#do_action('new_directory')
@@ -78,7 +77,7 @@ autocmd FileType defx call s:defx_my_settings()
 	  nnoremap <silent><buffer><expr> <C-l>
 	  \ defx#do_action('redraw')
 	  nnoremap <silent><buffer><expr> <C-g>
-	  \ defx#do_action('print')
+ 	  \ defx#do_action('print')
 	  nnoremap <silent><buffer><expr> cd
 	  \ defx#do_action('change_vim_cwd')
   endfunction
@@ -97,6 +96,10 @@ call defx#custom#column('git', 'indicators', {
   \ 'Ignored'   : '☒',
   \ 'Deleted'   : '✖',
   \ 'Unknown'   : '?'
+  \ })
+call defx#custom#column('mark', {
+  \ 'readonly_icon': '✗',
+  \ 'selected_icon': '✓',
   \ })
 call defx#custom#option('_', {
 		\ 'show_ignored_files': 1,
