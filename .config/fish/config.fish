@@ -5,6 +5,7 @@ set -gx TERM xterm-256color
 set XDG_CONFIG_HOME ~/.config $XDG_CONFIG_HOME
 set XDG_CACHE_HOME ~/.cache $XDG_CACHE_HOME
 set ANDROID_HOME $HOME/Library/Android/sdk
+set ANDROID_ROOT $HOME/Library/Android/sdk
 set PATH $ANDROID_HOME/emulator $PATH
 set PATH $ANDROID_HOME/tools $PATH
 set PATH $ANDROID_HOME/tools/bin $PATH
