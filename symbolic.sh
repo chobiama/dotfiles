@@ -32,4 +32,5 @@ ln -sf ~/dotfiles/.config/nvim/after/plugin/tokyonight.rc.lua ~/.config/nvim/aft
 ln -sf ~/dotfiles/.config/nvim/after/plugin/treesitter.rc.lua ~/.config/nvim/after/plugin/treesitter.rc.lua
 ln -sf ~/dotfiles/.config/nvim/after/plugin/ts-autotag.rc.lua ~/.config/nvim/after/plugin/ts-autotag.rc.lua
 ln -sf ~/dotfiles/.config/nvim/after/plugin/web-devicons.rc.lua ~/.config/nvim/after/plugin/web-devicons.rc.lua
-ln -sf ~/dotfiles/.config/nvim/after/plugin/zen-mode.rc.lua ~/.config/nvim/after/plugin/zen-mode.rc.lua
+ln -sf ~/dotfiles/.config/nvim/after/plugin/zen-mode.rc.lua ~/.config/nvim/after/plugin/toggleterm.rc.lua
+ln -sf ~/dotfiles/.config/nvim/after/plugin/toggleterm.rc.lua ~/.config/nvim/after/plugin/zen-mode.rc.lua
