@@ -46,4 +46,11 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
+  use {
+    'akinsho/toggleterm.nvim',
+    tag = 'v2.*',
+    config = function()
+      require('config.toggleterm')
+    end,
+  }
 end)
